@@ -24,17 +24,17 @@ module.exports = {
             errors:false,
         },// 错误和警告页面是否在页面弹出
 
-        proxy: {
-           /*  [process.env.VUE_APP_BASE_API]: {
+       /*  proxy: {
+            [process.env.VUE_APP_BASE_API]: {
                 target: `http://127.0.0.1:${port}/mock`,
                 changeOrigin: true,
                 pathRewrite: {
                   ['^' + process.env.VUE_APP_BASE_API]: ''
                 }
-              } */
-        }
+              }
+        } */
     },
-    configureWebpack: (config) => {
+   /*  configureWebpack: (config) => {
         if (process.env.NODE_ENV === 'production') {
             config.mode = 'production'
         } else {
@@ -44,9 +44,11 @@ module.exports = {
         Object.assign(config, {
             reslove: {
                 alias: {
-                    '@':path.reslove(__dirname,'./src')
+                    '@':reslove('src')
                 }
             }
         })
-    }
+    } */
 }
+
+
